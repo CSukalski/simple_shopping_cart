@@ -1,1 +1,38 @@
-css
+#total-price, .total-price-label {
+  display: inline-block;
+}
+
+#total-price {
+  margin-left: 30px;
+  font-size: 36px;
+}
+
+body {
+  background-size: cover;
+}
+
+.quantity, #name, #cost {
+  color: black;
+}
+
+.flipboard {
+  margin-top: 20px;
+}
+
+#calc-prices-button, #fork {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+.remove, #sort {
+  color: red;
+}
+
+#sort {
+  width: 100%;
+}
+.new {
+  margin-top: 20px;
+}
