@@ -53,27 +53,6 @@ $( document ).ready(function() {
     </div>');
   }
 
-  var sortItem = function() {
-    var prices = $('.item-price');
-    var names = $('.item-name');
-    var priceName = [];
-    for (i=0; i<prices.length; i++) {
-      var price = $(prices[i]).text().trim();
-      var name = $(names[i]).text().trim();
-      priceName.push([name,price]);
-    }
-    priceName.sort();
-    console.log(priceName);
-    for (i=0; i<priceName.length; i++) {
-      $($('.item-name')[i]).text(priceName[i][0]);
-      $($('.item-price')[i]).text(priceName[i][1]);
-    }
-  }
-
-
-  $(document).on('click', '#sort', function() {
-    sortItem();
-  });
 
   $(document).on('click', '#fork', function() {
     addItem($('#name').val(), $('#cost').val());
@@ -85,7 +64,6 @@ $( document ).ready(function() {
   });
 
   $('input').keydown(function(e){
-    // console.log(e.which);
     if (e.which == 13) {
       sum();
     };
